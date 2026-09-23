@@ -126,8 +126,8 @@
 {"id": "live_simple_125-81-0", "ground_truth": [{"concat_strings": {"strings": [["John", "Doe"]], "separator": [" "]}}]}
 {"id": "live_simple_126-82-0", "ground_truth": [{"telemetry.flowrules.interfaceInfo.get": {"fabricName": ["Global-Fabric"], "nodeId": [1200], "podId": [3], "interfaceType": ["ethernet"], "infoType": ["status"]}}]}
 {"id": "live_simple_127-82-1", "ground_truth": [{"telemetry.flowrules.interfaceInfo.get": {"fabricName": ["test-de"], "nodeId": [5], "podId": [1], "interfaceType": ["ethernet"], "infoType": ["status"]}}]}
-{"id": "live_simple_128-83-0", "ground_truth": [{"requests.get": {"url": ["https://192.168.11.33/sedgeapi/v1/cisco-nir/api/api/telemetry/flowrules/nodes?fabricName=PEK-ACI"], "fabricName": ["PEK-ACI"]}}]}
-{"id": "live_simple_129-83-1", "ground_truth": [{"requests.get": {"url": ["https://3.321.3232.2/sedgeapi/v1/cisco-nir/api/api/telemetry/flowrules/nodes?fabricName=fab-ed"], "fabricName": ["fab-ed"]}}]}
+{"id": "live_simple_128-83-0", "ground_truth": [{"requests.get": {"url": ["https://192.168.11.33/sedgeapi/v1/cisco-nir/api/api/telemetry/flowrules/nodes?fabricName={fabricName}"], "fabricName": ["PEK-ACI"]}}]}
+{"id": "live_simple_129-83-1", "ground_truth": [{"requests.get": {"url": ["https://3.321.3232.2/sedgeapi/v1/cisco-nir/api/api/telemetry/flowrules/nodes?fabricName={fabricName}"], "fabricName": ["fab-ed"]}}]}
 {"id": "live_simple_130-84-0", "ground_truth": [{"requests.get": {"url": ["https://192.120.45.67/sedgeapi/v1/cisco-nir/api/api/telemetry/flowrules/interfaceInfo"], "params": [{"fabricName": ["Network1"], "nodeId": [12], "podId": [10], "interfaceType": ["ethernet"], "infoType": ["statistics"]}]}}]}
 {"id": "live_simple_131-84-1", "ground_truth": [{"requests.get": {"url": ["https://192.120.45.67/sedgeapi/v1/cisco-nir/api/api/telemetry/flowrules/interfaceInfo"], "params": [{"fabricName": ["Network1"], "nodeId": [12], "podId": [10], "interfaceType": ["ethernet"], "infoType": ["Speed"]}]}}]}
 {"id": "live_simple_132-85-0", "ground_truth": [{"requests.get": {"url": ["https://example.com/device-connector-versions.json"], "params": ["", {}]}}]}
@@ -139,26 +139,26 @@
 {"id": "live_simple_138-91-0", "ground_truth": [{"reschedule": {"identifier": ["Bob-123"], "dateOrTime": ["2023-11-01T16:00:00"], "timezone": ["Europe/London"]}}]}
 {"id": "live_simple_139-92-0", "ground_truth": [{"requests.get": {"url": ["https://192.168.1.1/sedgeapi/v1/cisco-nir/api/api/v1/anomalies/summary"], "params": [{"fabric": ["network222"], "insightsGroup": ["", "defaultInsightsGroup"]}]}}]}
 {"id": "live_simple_140-93-0", "ground_truth": [{"greet_partner": {"user_name": ["Emily"], "partner_name": ["Jeff"], "relationship": ["husband"]}}]}
-{"id": "live_simple_141-94-0", "ground_truth": [{"cmd_controller.execute": {"command": ["docker --version"], "unit": ["", "N/A"]}}]}
-{"id": "live_simple_142-94-1", "ground_truth": [{"cmd_controller.execute": {"command": ["dir Desktop"], "unit": ["", "N/A"]}}]}
-{"id": "live_simple_143-95-0", "ground_truth": [{"cmd_controller.execute": {"command": ["docker ps"], "unit": ["", "N/A"]}}]}
-{"id": "live_simple_144-95-1", "ground_truth": [{"cmd_controller.execute": {"command": ["taskkill /F /IM firefox.exe", "taskkill /IM firefox.exe /F", "taskkill /IM firefox.exe"], "unit": ["", "N/A"]}}]}
-{"id": "live_simple_145-95-2", "ground_truth": [{"cmd_controller.execute": {"command": ["dir C:\\", "dir C:\\\\"], "unit": ["", "N/A"]}}]}
-{"id": "live_simple_146-95-3", "ground_truth": [{"cmd_controller.execute": {"command": ["start https://huggingface.co"], "unit": ["", "N/A"]}}]}
-{"id": "live_simple_147-95-4", "ground_truth": [{"cmd_controller.execute": {"command": ["taskkill /F /IM timer.exe"], "unit": ["", "N/A"]}}]}
-{"id": "live_simple_148-95-5", "ground_truth": [{"cmd_controller.execute": {"command": ["dir C:\\", "dir C:\\\\"], "unit": ["", "N/A"]}}]}
-{"id": "live_simple_149-95-6", "ground_truth": [{"cmd_controller.execute": {"command": ["echo hi"], "unit": ["", "N/A"]}}]}
-{"id": "live_simple_150-95-7", "ground_truth": [{"cmd_controller.execute": {"command": ["shutdown /s /t 0"], "unit": ["", "N/A"]}}]}
-{"id": "live_simple_151-95-8", "ground_truth": [{"cmd_controller.execute": {"command": ["netsh wlan disconnect"], "unit": ["", "N/A"]}}]}
-{"id": "live_simple_152-95-9", "ground_truth": [{"cmd_controller.execute": {"command": ["dir D:\\\\ && echo testing.txt"], "unit": ["", "N/A"]}}]}
-{"id": "live_simple_153-95-10", "ground_truth": [{"cmd_controller.execute": {"command": ["del \"%userprofile%\\Desktop\\putty.lnk\"", "del \\\"%userprofile%\\\\Desktop\\\\putty.lnk\\"], "unit": ["", "N/A"]}}]}
-{"id": "live_simple_154-95-11", "ground_truth": [{"cmd_controller.execute": {"command": ["start https://www.youtube.com/watch?v=dQw4w9WgXcQ", "start https://www.youtube.com/watch?v=dQw4w9WgXcQ\\"], "unit": ["", "N/A"]}}]}
-{"id": "live_simple_155-95-12", "ground_truth": [{"cmd_controller.execute": {"command": ["date /t", "echo %date%"], "unit": ["", "N/A"]}}]}
-{"id": "live_simple_156-95-13", "ground_truth": [{"cmd_controller.execute": {"command": ["dir C:\\", "dir C:\\\\"], "unit": ["", "N/A"]}}]}
-{"id": "live_simple_157-95-14", "ground_truth": [{"cmd_controller.execute": {"command": ["echo %time%"], "unit": ["", "N/A"]}}]}
-{"id": "live_simple_158-95-15", "ground_truth": [{"cmd_controller.execute": {"command": ["taskkill /IM code.exe /F", "taskkill /F /IM code.exe"], "unit": ["", "N/A"]}}]}
-{"id": "live_simple_159-95-16", "ground_truth": [{"cmd_controller.execute": {"command": ["timeout 10"], "unit": ["", "N/A"]}}]}
-{"id": "live_simple_160-95-17", "ground_truth": [{"cmd_controller.execute": {"command": ["start microsoft.windows.camera:"], "unit": ["", "N/A"]}}]}
+{"id": "live_simple_141-94-0", "ground_truth": [{"cmd_controller.execute": {"command": ["docker --version"], "unit": [""]}}]}
+{"id": "live_simple_142-94-1", "ground_truth": [{"cmd_controller.execute": {"command": ["dir Desktop"], "unit": [""]}}]}
+{"id": "live_simple_143-95-0", "ground_truth": [{"cmd_controller.execute": {"command": ["docker ps"], "unit": [""]}}]}
+{"id": "live_simple_144-95-1", "ground_truth": [{"cmd_controller.execute": {"command": ["taskkill /F /IM firefox.exe", "taskkill /IM firefox.exe /F", "taskkill /IM firefox.exe"], "unit": [""]}}]}
+{"id": "live_simple_145-95-2", "ground_truth": [{"cmd_controller.execute": {"command": ["dir C:\\", "dir C:\\\\"], "unit": [""]}}]}
+{"id": "live_simple_146-95-3", "ground_truth": [{"cmd_controller.execute": {"command": ["start https://huggingface.co"], "unit": [""]}}]}
+{"id": "live_simple_147-95-4", "ground_truth": [{"cmd_controller.execute": {"command": ["taskkill /F /IM timer.exe"], "unit": [""]}}]}
+{"id": "live_simple_148-95-5", "ground_truth": [{"cmd_controller.execute": {"command": ["dir C:\\", "dir C:\\\\"], "unit": [""]}}]}
+{"id": "live_simple_149-95-6", "ground_truth": [{"cmd_controller.execute": {"command": ["echo hi"], "unit": [""]}}]}
+{"id": "live_simple_150-95-7", "ground_truth": [{"cmd_controller.execute": {"command": ["shutdown /s /t 0"], "unit": [""]}}]}
+{"id": "live_simple_151-95-8", "ground_truth": [{"cmd_controller.execute": {"command": ["netsh wlan disconnect"], "unit": [""]}}]}
+{"id": "live_simple_152-95-9", "ground_truth": [{"cmd_controller.execute": {"command": ["dir D:\\\\ && echo testing.txt"], "unit": [""]}}]}
+{"id": "live_simple_153-95-10", "ground_truth": [{"cmd_controller.execute": {"command": ["del \"%userprofile%\\Desktop\\putty.lnk\"", "del \\\"%userprofile%\\\\Desktop\\\\putty.lnk\\"], "unit": [""]}}]}
+{"id": "live_simple_154-95-11", "ground_truth": [{"cmd_controller.execute": {"command": ["start https://www.youtube.com/watch?v=dQw4w9WgXcQ", "start https://www.youtube.com/watch?v=dQw4w9WgXcQ\\"], "unit": [""]}}]}
+{"id": "live_simple_155-95-12", "ground_truth": [{"cmd_controller.execute": {"command": ["date /t", "echo %date%"], "unit": [""]}}]}
+{"id": "live_simple_156-95-13", "ground_truth": [{"cmd_controller.execute": {"command": ["dir C:\\", "dir C:\\\\"], "unit": [""]}}]}
+{"id": "live_simple_157-95-14", "ground_truth": [{"cmd_controller.execute": {"command": ["echo %time%"], "unit": [""]}}]}
+{"id": "live_simple_158-95-15", "ground_truth": [{"cmd_controller.execute": {"command": ["taskkill /IM code.exe /F", "taskkill /F /IM code.exe"], "unit": [""]}}]}
+{"id": "live_simple_159-95-16", "ground_truth": [{"cmd_controller.execute": {"command": ["timeout 10"], "unit": [""]}}]}
+{"id": "live_simple_160-95-17", "ground_truth": [{"cmd_controller.execute": {"command": ["start microsoft.windows.camera:"], "unit": [""]}}]}
 {"id": "live_simple_161-96-0", "ground_truth": [{"get_items": {"items": [["Blue square", "Red square", "Green square", "Yellow square", "Superman logo", "Iron Man logo", "Hulk logo", "Batman logo", "Fist", "Bat", "Face mask", "Outline"]]}}]}
 {"id": "live_simple_162-96-1", "ground_truth": [{"get_items": {"items": [["Red and blue circle logo", "Red and yellow circle logo", "Green circle logo", "Black circle logo"]]}}]}
 {"id": "live_simple_163-96-2", "ground_truth": [{"get_items": {"items": [["red logo", "yellow rectangle", "white text", "Lego characters", "movie title", "release date", "actor names"]]}}]}
@@ -184,7 +184,7 @@
 {"id": "live_simple_183-108-0", "ground_truth": [{"getDataForProfessional": {"avg_rating": [2.0], "province_id": [1], "districts_name": ["", "All districts", "Bangkok"], "service_id": [1]}}]}
 {"id": "live_simple_184-109-0", "ground_truth": [{"getDataForProfessional": {"service_id": [1], "province_id": [1], "district_name": ["", null], "rating": [4.0]}}]}
 {"id": "live_simple_185-110-0", "ground_truth": [{"get_service_providers": {"service_id": [2], "province_id": [3], "district_name": ["", null], "sub_district_name": ["", null], "rating": [4.5], "start_available_date": ["2023-09-30"]}}]}
-{"id": "live_simple_186-111-0", "ground_truth": [{"get_service_providers": {"service_id": [2], "province_id": [3], "district_name": ["", null], "sub_district_name": ["", null], "rating": [4.5], "start_available_date": ["2024-03-12 16:00:00"], "end_available_date": ["2024-03-12 18:00:00"]}}]}
+{"id": "live_simple_186-111-0", "ground_truth": [{"get_service_providers": {"service_id": [2], "province_id": [3], "district_name": ["", null], "sub_district_name": ["", null], "rating": [4.5], "start_available_date": ["2024-03-12 16:00:00", "2024-12-03 16:00:00"], "end_available_date": ["2024-03-12 18:00:00", "2024-12-03 18:00:00"]}}]}
 {"id": "live_simple_187-112-0", "ground_truth": [{"get_service_providers": {"service_id": [2], "province_id": [3], "district_name": ["", "Any"], "sub_district_name": ["", "Any"], "rating": [4.5], "start_available_date": ["2024-03-12", "2024-12-03"], "end_available_date": ["2024-03-12", "2024-12-03"], "has_late_check_in": ["", false]}}]}
 {"id": "live_simple_188-113-0", "ground_truth": [{"getDataForProfessional": {"service_id": [2], "province_id": [2], "district_name": ["Sankampang"], "sub_district_name": ["Ton Pao"], "start_available_date": ["", null], "end_available_date": ["", null], "has_late_check_in": ["", false], "rating": [4.5]}}]}
 {"id": "live_simple_189-114-0", "ground_truth": [{"extractor.extract_information": {"data": [[{"name": ["Chester"], "age": [42]}, {"name": ["Jane"], "age": [43]}]]}}]}
